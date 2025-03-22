@@ -14,8 +14,8 @@ spec:
     spec:
       containers:
         - name: bookdir-app
-          image: techtalkjervin/social-app:latest
-          imagePullPolicy: Never
+          image: karthikeyan1512/mydocker_042:latest
+          imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 8080
 ---
@@ -30,5 +30,5 @@ spec:
     - protocol: TCP
       port: 80
       targetPort: 8080
-      nodePort: 30008
+      nodePort: 30009
   type: NodePort
